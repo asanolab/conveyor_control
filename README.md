@@ -6,17 +6,25 @@
 ### Setup
 - Arduino setup
   1. Install arduino ide
-  2. Install u8glib
-  3. Write sketchbook to controller
-    - 以下のsketchbookをcontroller (arduino mega)へ書き込む
-    - https://github.com/asanolab/Controller/blob/devel/scene_demo/conveyor_belt/src/conveyor_belt/conveyor_belt.ino
+  2. Install libraries
+    - u8glib
+      - Tools -> Manage Libraries -> search and install u8glib
+    - ros_lib
+      ```
+      cd /home/utokyo/Arduino/libraries
+      rosrun rosserial_arduino make_libraries.py .
+      ```
 
-- ros_lib setup
-  ```
-  cd /home/utokyo/Arduino/libraries
-  rosrun rosserial_arduino make_libraries.py .
-  ```
-
+  3. Write sketchbook below to controller
+    - sketckbook
+      - https://github.com/asanolab/Controller/blob/devel/scene_demo/conveyor_belt/src/conveyor_belt/conveyor_belt.ino
+    - add permission
+    ```
+    sudo chmod 666 /dev/ttyACM0
+    ```
+    - Choose Boad "Arduino Mega" and port (usually /dev/ttyACM0)
+    - Click "Upload"
+      
 ### converyor demo
 ```
 roscore
