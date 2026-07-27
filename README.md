@@ -1,6 +1,7 @@
 # converyor_control
 ## Setup for ufactory conveyor
 ### Online manual (ufactory conveyor)
+- https://github.com/uArm-Developer/ConveyorBelt-Examples/blob/master/doc/ConveyorBelt%20Getting%20Started%20en%20V1.0.pdf
 - https://github.com/uArm-Developer/Controller/blob/master/doc/uArmController%20User%20Manual(Geek%20Edition)20181228V1.0.1.pdf
 
 ### Setup
